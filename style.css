@@ -1,0 +1,789 @@
+﻿/* ==========================
+   GOOGLE STYLE RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    color:white;
+    background:#050816;
+    overflow-x:hidden;
+
+}
+
+/* ==========================
+   ANIMATED BACKGROUND
+========================== */
+
+.background{
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:
+    radial-gradient(circle at 20% 20%,rgba(255,255,255,.15) 2px,transparent 3px),
+    radial-gradient(circle at 70% 30%,rgba(255,255,255,.12) 2px,transparent 3px),
+    radial-gradient(circle at 50% 80%,rgba(255,255,255,.10) 2px,transparent 3px),
+    linear-gradient(180deg,#040816,#09152d);
+
+    background-size:
+    300px 300px,
+    350px 350px,
+    400px 400px,
+    100% 100%;
+
+    animation:stars 25s linear infinite;
+
+    z-index:-2;
+
+}
+
+@keyframes stars{
+
+    from{
+        background-position:0 0,0 0,0 0,0 0;
+    }
+
+    to{
+        background-position:
+        300px 300px,
+        -300px 200px,
+        200px -300px,
+        0 0;
+    }
+
+}
+
+/* ==========================
+   SECTIONS
+========================== */
+
+section{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+}
+
+/* Hide everything except first page */
+
+#loginPage,
+#terminalPage,
+#welcomeFriend,
+#gallery,
+#funny,
+#letter,
+#end{
+
+    display:none;
+
+}
+
+/* ==========================
+   GLASS CARD
+========================== */
+
+.glass{
+
+    width:420px;
+
+    max-width:90%;
+
+    padding:40px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    box-shadow:0 10px 40px rgba(0,0,0,.45);
+
+}
+
+/* ==========================
+   HEADINGS
+========================== */
+
+h1{
+
+    font-size:42px;
+
+    margin-bottom:20px;
+
+}
+
+h2{
+
+    margin-bottom:20px;
+
+}
+
+h3{
+
+    color:#67d4ff;
+
+    letter-spacing:2px;
+
+    margin-bottom:15px;
+
+}
+
+p{
+
+    margin:18px 0;
+
+    line-height:1.8;
+
+}
+
+/* ==========================
+   INPUTS
+========================== */
+
+select,
+input{
+
+    width:100%;
+
+    margin-top:18px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    outline:none;
+
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+button{
+
+    margin-top:25px;
+
+    padding:14px 35px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:#4c7dff;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+}
+
+button:hover{
+
+    transform:translateY(-4px);
+
+    background:#7098ff;
+
+    box-shadow:0 0 20px #4c7dff;
+
+}
+
+/* ==========================
+   LOGIN MESSAGE
+========================== */
+
+#message{
+
+    min-height:40px;
+
+    margin-top:18px;
+
+    font-weight:600;
+
+}
+
+#hintBtn{
+
+    display:none;
+
+    background:#f9c74f;
+
+    color:black;
+
+}
+
+#hint{
+
+    display:none;
+
+    color:#ffe082;
+
+    margin-top:18px;
+
+}
+
+/* ==========================
+   TERMINAL
+========================== */
+
+.terminal{
+
+    width:700px;
+
+    max-width:90%;
+
+    background:black;
+
+    color:#00ff88;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    font-family:Courier New, monospace;
+
+    box-shadow:0 0 30px rgba(0,255,120,.35);
+
+}
+
+#terminalText{
+
+    margin-top:25px;
+
+    white-space:pre-line;
+
+    line-height:2;
+
+    font-size:18px;
+
+}
+
+/* ==========================
+   SHAYARI PAGE
+========================== */
+
+#shayariPage{
+
+    display:none;
+
+}
+
+.shayariBox{
+
+    width:900px;
+
+    max-width:90%;
+
+    text-align:center;
+
+    animation:fadeIn 1s ease;
+
+}
+
+#shayariText{
+
+    margin-top:40px;
+
+    font-size:32px;
+
+    line-height:1.8;
+
+    min-height:250px;
+
+    transition:opacity 1s;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================
+   DECRYPT PAGE
+========================== */
+
+#decryptPage{
+
+    display:none;
+
+}
+
+/* ==========================
+   FRIENDSHIP CERTIFICATE
+========================== */
+
+#certificatePage {
+
+    display: none;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-height: 100vh;
+
+}
+
+
+.certificate {
+
+    width: 850px;
+
+    max-width: 90%;
+
+    padding: 55px;
+
+    text-align: center;
+
+    background: rgba(255,255,255,0.95);
+
+    color: #222;
+
+    border-radius: 25px;
+
+    border: 8px solid #d4af37;
+
+    box-shadow:
+        0 0 20px rgba(212,175,55,0.8),
+        0 0 50px rgba(212,175,55,0.5);
+
+    position: relative;
+
+    animation: certificateAppear 1.5s ease;
+
+}
+
+
+/* Decorative corners */
+
+.certificate::before,
+.certificate::after {
+
+    content:"";
+
+    position:absolute;
+
+    width:70px;
+
+    height:70px;
+
+    border:5px solid #d4af37;
+
+}
+
+
+.certificate::before {
+
+    top:15px;
+
+    left:15px;
+
+    border-right:none;
+
+    border-bottom:none;
+
+}
+
+
+.certificate::after {
+
+    bottom:15px;
+
+    right:15px;
+
+    border-left:none;
+
+    border-top:none;
+
+}
+
+
+/* Trophy */
+
+.certificate h1 {
+
+    font-size:55px;
+
+}
+
+
+/* Main heading */
+
+.certificate h2 {
+
+    font-size:32px;
+
+    letter-spacing:2px;
+
+    color:#8b6508;
+
+}
+
+
+/* Friend Names */
+
+.certificate h3 {
+
+    font-size:35px;
+
+    line-height:1.7;
+
+    color:#1a1a1a;
+
+    font-family:Georgia, serif;
+
+    margin:25px 0;
+
+}
+
+
+/* Points */
+
+.certificate ul {
+
+    list-style:none;
+
+    padding:0;
+
+    font-size:18px;
+
+    line-height:2;
+
+}
+
+
+/* Award */
+
+.award {
+
+    margin-top:35px;
+
+    font-size:20px;
+
+}
+
+
+.award strong {
+
+    font-size:28px;
+
+    color:#111;
+
+}
+
+
+/* Forever text */
+
+.forever {
+
+    margin-top:30px;
+
+    color:#8b0000;
+
+    font-size:22px;
+
+}
+
+
+/* Button */
+
+#finalBtn {
+
+    margin-top:30px;
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#111;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+#finalBtn:hover {
+
+    transform:scale(1.05);
+
+    box-shadow:0 0 20px gold;
+
+}
+
+
+/* Animation */
+
+@keyframes certificateAppear {
+
+    from {
+
+        opacity:0;
+
+        transform:scale(.8);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ==========================
+   FINAL CLASSIFIED FILE
+========================== */
+
+#finalPage {
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+}
+
+
+.finalTerminal {
+
+    width:900px;
+
+    max-width:90%;
+
+}
+
+
+#finalText {
+
+    color:#00ff66;
+
+    font-size:22px;
+
+    line-height:1.8;
+
+    text-align:left;
+
+}
+
+#finalText{
+
+    transition:opacity 1.5s ease;
+
+}
+
+/* ==========================
+   FRIENDSHIP SCAN
+========================== */
+
+#friendshipScan{
+
+    display:none;
+
+    color:#00ff66;
+
+    text-align:center;
+
+}
+
+
+#scanText{
+
+    font-size:24px;
+
+    line-height:2;
+
+}
+
+/* ==========================
+   FRIENDSHIP ANALYZER
+========================== */
+
+#analyzerPage{
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+}
+
+#analyzerText{
+
+    color:#00ff66;
+
+    font-size:22px;
+
+    line-height:1.8;
+
+    white-space:pre-wrap;
+
+}
+#loveMessage{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100%;
+    min-height:70vh;
+    text-align:center;
+    font-size:55px;
+    font-weight:bold;
+    color:#ff4d6d;
+    text-shadow:0 0 25px #ff4d6d;
+    letter-spacing:4px;
+    animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.05);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+/* ==========================
+   MOBILE RESPONSIVE
+========================== */
+
+@media (max-width: 768px) {
+
+    .container,
+    .terminal,
+    .certificate {
+
+        width: 90%;
+        padding: 20px;
+
+    }
+
+    h1 {
+
+        font-size: 36px;
+
+    }
+
+    h2 {
+
+        font-size: 24px;
+
+    }
+
+    h3 {
+
+        font-size: 22px;
+
+    }
+
+    p {
+
+        font-size: 16px;
+
+    }
+
+    button {
+
+        width: 100%;
+        font-size: 18px;
+        padding: 15px;
+
+    }
+
+    input {
+
+        width: 100%;
+        font-size: 16px;
+        padding: 12px;
+
+    }
+
+    pre {
+
+        font-size: 15px;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+
+    }
+
+    #loveMessage {
+
+        font-size: 32px;
+        padding: 20px;
+
+    }
+
+}

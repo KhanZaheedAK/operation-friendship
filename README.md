@@ -1,21 +1,28 @@
-# 🤝 Friendship Website
+# 🤝 Operation Friendship
 
-A personal interactive friendship website created using HTML, CSS, and JavaScript. The project combines messages, surprises, and interactive features into a single memorable web experience.
+An interactive friendship website created using HTML, CSS, and JavaScript. The project combines personalized messages, surprises, and interactive features into a digital friendship experience.
 
 ## 🌐 Live Website
 
-🔗 [Visit the Friendship Website](https://khanzaheedak.github.io/operation-friendship/)
+🚀 [Visit Operation Friendship](https://khanzaheedak.github.io/operation-friendship/)
+
+## 🔐 Demo Access
+
+Use the following password to enter the website:
+
+**Password:** `1234`
+
+> This is a public demo password provided so visitors can explore the website.
 
 ## ✨ Features
 
 - 🔐 Password-protected entry
-- 💡 Password hint option
+- 💡 Password hint
 - 💬 Personalized Shayari and messages
 - 🏆 Friendship certificate
 - ⏳ Time capsule message
 - 📅 Time capsule unlock date: **2 August 2036**
 - 🎨 Interactive and personalized design
-- 💻 Built with HTML, CSS, and JavaScript
 
 ## 🛠️ Technologies Used
 
@@ -23,12 +30,14 @@ A personal interactive friendship website created using HTML, CSS, and JavaScrip
 - CSS3
 - JavaScript
 
-## 📂 Project Structure
+## 🎯 Purpose
 
-```text
-Friendship-Website/
-│
-├── text.html
-├── style.css
-├── text.js
-└── README.md
+A creative web development project designed to turn friendship memories and messages into an interactive digital experience.
+
+## 🚀 Project Status
+
+Completed ✅
+
+## 👨‍💻 Developer
+
+**Zaheed Khan**

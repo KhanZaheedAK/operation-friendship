@@ -60,7 +60,13 @@ const friends = {
         password:"2712",
         name:"Farhan",
         hint:"💡 Hint: DDMM Format"
+    },
+    demo:{
+        password:"1234",
+        name:"Demo User",
+        hint:"💡 Hint: Check the description or README"
     }
+
 
 };
 

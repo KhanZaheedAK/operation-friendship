@@ -4,7 +4,7 @@ A personal interactive friendship website created using HTML, CSS, and JavaScrip
 
 ## 🌐 Live Website
 
-🔗 [Visit the Friendship Website](YOUR_LIVE_WEBSITE_LINK)
+🔗 [Visit the Friendship Website](https://khanzaheedak.github.io/operation-friendship/)
 
 ## ✨ Features
 
